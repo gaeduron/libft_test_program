@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 16:08:22 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 18:03:38 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,6 +138,39 @@ void	part1()
 	char ft_ncat4[7] = {0};
 	printf("   strncat = %s\n", strncat(ncat4, "424242", 0));
 	printf("ft_strncat = %s\n", ft_strncat(ft_ncat4, "424242", 0));
+
+	printf("\n\033[36m____ft_strncat____\033[00m\n");
+	char lcat1[10] = {0};
+	char ft_lcat1[10] = {0};
+	printf("   strlcat = %lu\n", strlcat(lcat1, "424242", 3));
+	printf("ft_strlcat = %lu\n", ft_strlcat(ft_lcat1, "424242", 3));
+	printf("   str     = %s\n", lcat1);
+	printf("ft_str     = %s\n", ft_lcat1);
+	char lcat2[10] = "abc";
+	char ft_lcat2[10] = "abc";
+	printf("   strlcat = %lu\n", strlcat(lcat2, "def", 7));
+	printf("ft_strlcat = %lu\n", ft_strlcat(ft_lcat2, "def", 7));
+	printf("   str     = %s\n", lcat2);
+	printf("ft_str     = %s\n", ft_lcat2);
+	char lcat3[10] = "abc";
+	char ft_lcat3[10] = "abc";
+	printf("   strlcat = %lu\n", strlcat(lcat3, "def", 1));
+	printf("ft_strlcat = %lu\n", ft_strlcat(ft_lcat3, "def", 1));
+	printf("   str     = %s\n", lcat3);
+	printf("ft_str     = %s\n", ft_lcat3);
+	char lcat4[10] = "abc";
+	char ft_lcat4[10] = "abc";
+	printf("   strlcat = %lu\n", strlcat(lcat4, "def", 4));
+	printf("ft_strlcat = %lu\n", ft_strlcat(ft_lcat4, "def", 4));
+	printf("   str     = %s\n", lcat4);
+	printf("ft_str     = %s\n", ft_lcat4);
+	char lcat5[10] = "abc";
+	char ft_lcat5[10] = "abc";
+	printf("   strlcat = %lu\n", strlcat(lcat5, "defijkl", 10));
+	printf("ft_strlcat = %lu\n", ft_strlcat(ft_lcat5, "defijkl", 10));
+	printf("   str     = %s\n", lcat5);
+	printf("ft_str     = %s\n", ft_lcat5);
+
 
 
 	printf("\n\033[33m________is* group________\033[00m\n");
