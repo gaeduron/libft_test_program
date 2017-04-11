@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 19:54:51 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 20:50:16 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -236,13 +236,78 @@ void	part1()
 	printf("\n\033[33m________is* group________\033[00m\n");
 
 	printf("\n\033[36m____ft_isalpha____\033[00m\n");
+	printf("   isalpha = %d\n", isalpha('c'));
+	printf("ft_isalpha = %d\n", ft_isalpha('c'));
+	printf("   isalpha = %d\n", isalpha('1'));
+	printf("ft_isalpha = %d\n", ft_isalpha('1'));
+	printf("   isalpha = %d\n", isalpha('\10'));
+	printf("ft_isalpha = %d\n", ft_isalpha('\10'));
+	printf("   isalpha = %d\n", isalpha('C'));
+	printf("ft_isalpha = %d\n", ft_isalpha('C'));
+	printf("   isalpha = %d\n", isalpha(1203));
+	printf("ft_isalpha = %d\n", ft_isalpha(1203));
+	printf("   isalpha = %d\n", isalpha(0));
+	printf("ft_isalpha = %d\n", ft_isalpha(0));
 
 	printf("\n\033[36m____ft_isdigit____\033[00m\n");
+	printf("   isdigit = %d\n", isdigit('c'));
+	printf("ft_isdigit = %d\n", ft_isdigit('c'));
+	printf("   isdigit = %d\n", isdigit('1'));
+	printf("ft_isdigit = %d\n", ft_isdigit('1'));
+	printf("   isdigit = %d\n", isdigit('\10'));
+	printf("ft_isdigit = %d\n", ft_isdigit('\10'));
+	printf("   isdigit = %d\n", isdigit('C'));
+	printf("ft_isdigit = %d\n", ft_isdigit('C'));
+	printf("   isdigit = %d\n", isdigit(1203));
+	printf("ft_isdigit = %d\n", ft_isdigit(1203));
+	printf("   isdigit = %d\n", isdigit(0));
+	printf("ft_isdigit = %d\n", ft_isdigit(0));
 
 	printf("\n\033[36m____ft_isprint____\033[00m\n");
+	printf("   isprint = %d\n", isprint('c'));
+	printf("ft_isprint = %d\n", ft_isprint('c'));
+	printf("   isprint = %d\n", isprint('1'));
+	printf("ft_isprint = %d\n", ft_isprint('1'));
+	printf("   isprint = %d\n", isprint('\10'));
+	printf("ft_isprint = %d\n", ft_isprint('\10'));
+	printf("   isprint = %d\n", isprint('C'));
+	printf("ft_isprint = %d\n", ft_isprint('C'));
+	printf("   isprint = %d\n", isprint(1203));
+	printf("ft_isprint = %d\n", ft_isprint(1203));
+	printf("   isprint = %d\n", isprint(0));
+	printf("ft_isprint = %d\n", ft_isprint(0));
 
+
+	printf("\n\033[36m____ft_isalnum____\033[00m\n");
+	printf("   isalnum = %d\n", isalnum('c'));
+	printf("ft_isalnum = %d\n", ft_isalnum('c'));
+	printf("   isalnum = %d\n", isalnum('1'));
+	printf("ft_isalnum = %d\n", ft_isalnum('1'));
+	printf("   isalnum = %d\n", isalnum('\10'));
+	printf("ft_isalnum = %d\n", ft_isalnum('\10'));
+	printf("   isalnum = %d\n", isalnum('C'));
+	printf("ft_isalnum = %d\n", ft_isalnum('C'));
+	printf("   isalnum = %d\n", isalnum(1203));
+	printf("ft_isalnum = %d\n", ft_isalnum(1203));
+	printf("   isalnum = %d\n", isalnum(0));
+	printf("ft_isalnum = %d\n", ft_isalnum(0));
+
+	printf("\n\033[36m____ft_isascii____\033[00m\n");
+	printf("   isascii = %d\n", isascii('c'));
+	printf("ft_isascii = %d\n", ft_isascii('c'));
+	printf("   isascii = %d\n", isascii('1'));
+	printf("ft_isascii = %d\n", ft_isascii('1'));
+	printf("   isascii = %d\n", isascii('\10'));
+	printf("ft_isascii = %d\n", ft_isascii('\10'));
+	printf("   isascii = %d\n", isascii('C'));
+	printf("ft_isascii = %d\n", ft_isascii('C'));
+	printf("   isascii = %d\n", isascii(1203));
+	printf("ft_isascii = %d\n", ft_isascii(1203));
+	printf("   isascii = %d\n", isascii(0));
+	printf("ft_isascii = %d\n", ft_isascii(0));
 
 	printf("\n\033[33m________to* group________\033[00m\n");
+
 
 	printf("\n\033[36m____ft_tolower____\033[00m\n");
 
