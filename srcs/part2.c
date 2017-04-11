@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.h                                             :+:      :+:    :+:   */
+/*   part2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/11 09:23:40 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 09:51:15 by gduron           ###   ########.fr       */
+/*   Created: 2017/04/11 10:03:02 by gduron            #+#    #+#             */
+/*   Updated: 2017/04/11 10:03:54 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_H
-# define MAIN_H
+#include "main.h"
 
-# include <string.h>
-# include <ctype.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include "../libft/libft.h"
+void	part2()
+{
+	printf("\n______________________ PART 2 ______________________\n");
+	
+	printf("\n________str* group________\n");
+	
+	printf("\n________mem* group________\n");
+	
+	printf("\n________put* group________\n");
+	
+	printf("\n________others________\n");
 
-void	part1(void);
-void	part2(void);
-void	bonus(void);
-#endif
+}

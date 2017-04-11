@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.h                                             :+:      :+:    :+:   */
+/*   part2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/11 09:23:40 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 09:51:15 by gduron           ###   ########.fr       */
+/*   Created: 2017/04/11 10:03:02 by gduron            #+#    #+#             */
+/*   Updated: 2017/04/11 10:04:44 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_H
-# define MAIN_H
+#include "main.h"
 
-# include <string.h>
-# include <ctype.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include "../libft/libft.h"
+void	bonus()
+{
+	printf("\n______________________ BONUS ______________________\n");
 
-void	part1(void);
-void	part2(void);
-void	bonus(void);
-#endif
+}
