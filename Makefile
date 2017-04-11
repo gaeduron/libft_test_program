@@ -20,7 +20,7 @@ bonus.c
 
 CC = -Wall -Werror -Wextra
 
-LIB = -L../libft -lft
+LIB = -L../00_github_Libft -lft
 
 OBJ = $(SRC:.c=.o)
 
@@ -39,7 +39,7 @@ clean:
 	@rm -f *.o
 
 fclean: clean
-	@echo "Deleting:\033[33m $(NAME)"
+	@echo "Deleting:\033[33m $(NAME)\033[0m"
 	@rm -f $(NAME)
 
 re: fclean all

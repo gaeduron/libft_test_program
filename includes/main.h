@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:23:40 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 09:51:15 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 10:08:04 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <ctype.h>
 # include <stdlib.h>
 # include <stdio.h>
-# include "../libft/libft.h"
+# include "../../00_github_Libft/libft.h"
 
 void	part1(void);
 void	part2(void);
