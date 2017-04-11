@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 19:12:13 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 19:54:51 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -214,8 +214,24 @@ void	part1()
 	printf("ft_strncpy = %s\n", ft_strncpy(ft_ncpy3, "123", 10));
 
 	printf("\n\033[36m____ft_strchr____\033[00m\n");
+	printf("   strchr = %s\n", strchr("42", '4'));
+	printf("ft_strchr = %s\n", ft_strchr("42", '4'));
+	printf("   strchr = %s\n", strchr("42", 0));
+	printf("ft_strchr = %s\n", ft_strchr("42", 0));
+	printf("   strchr = %s\n", strchr("123123", '1'));
+	printf("ft_strchr = %s\n", ft_strchr("123123", '1'));
+	printf("   strchr = %s\n", strchr("0987654321", '1'));
+	printf("ft_strchr = %s\n", ft_strchr("0987654321", '1'));
 
 	printf("\n\033[36m____ft_strrchr____\033[00m\n");
+	printf("   strrchr = %s\n", strrchr("42", '4'));
+	printf("ft_strrchr = %s\n", ft_strrchr("42", '4'));
+	printf("   strrchr = %s\n", strrchr("42", 0));
+	printf("ft_strrchr = %s\n", ft_strrchr("42", 0));
+	printf("   strrchr = %s\n", strrchr("123123", '1'));
+	printf("ft_strrchr = %s\n", ft_strrchr("123123", '1'));
+	printf("   strrchr = %s\n", strrchr("10987654321", '1'));
+	printf("ft_strrchr = %s\n", ft_strrchr("10987654321", '1'));
 
 	printf("\n\033[33m________is* group________\033[00m\n");
 
