@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 18:43:35 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 19:12:13 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,18 @@ void	part1()
 //	printf("ft_strstr = %s\n", ft_strstr(0, 0));
 
 	printf("\n\033[36m____ft_strnstr____\033[00m\n");
+	printf("   strnstr = %s\n", strnstr("", "", 3));
+	printf("ft_strnstr = %s\n", ft_strnstr("", "", 3));
+	printf("   strnstr = %s\n", strnstr("1 2 3", "2", 10));
+	printf("ft_strnstr = %s\n", ft_strnstr("1 2 3", "2", 10));
+	printf("   strnstr = %s\n", strnstr("1 2 3", "2", 1));
+	printf("ft_strnstr = %s\n", ft_strnstr("1 2 3", "2", 1));
+	printf("   strnstr = %s\n", strnstr("1 2 3", "2", 0));
+	printf("ft_strnstr = %s\n", ft_strnstr("1 2 3", "2", 0));
+	printf("   strnstr = %s\n", strnstr("1 2 3", "", 10));
+	printf("ft_strnstr = %s\n", ft_strnstr("1 2 3", "", 10));
+	printf("   strnstr = %s\n", strnstr("1 2 3", "", 0));
+	printf("ft_strnstr = %s\n", ft_strnstr("1 2 3", "", 0));
 
 	printf("\n\033[36m____ft_strcat____\033[00m\n");
 	char cat1[10] = {0};
