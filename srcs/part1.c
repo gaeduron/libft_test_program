@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 18:03:38 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/11 18:43:35 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ void	part1()
 //	printf("   strstr = %s\n", strstr(0, 0));
 //	printf("ft_strstr = %s\n", ft_strstr(0, 0));
 
+	printf("\n\033[36m____ft_strnstr____\033[00m\n");
+
 	printf("\n\033[36m____ft_strcat____\033[00m\n");
 	char cat1[10] = {0};
 	char ft_cat1[10] = {0};
@@ -171,7 +173,37 @@ void	part1()
 	printf("   str     = %s\n", lcat5);
 	printf("ft_str     = %s\n", ft_lcat5);
 
+	printf("\n\033[36m____ft_strcpy____\033[00m\n");
+	char cpy1[10] = {0};
+	char ft_cpy1[10] = {0};
+	printf("   strcpy = %s\n", strcpy(cpy1, "424242"));
+	printf("ft_strcpy = %s\n", ft_strcpy(ft_cpy1, "424242"));
+	char cpy2[10] = {0};
+	char ft_cpy2[10] = {0};
+	printf("   strcpy = %s\n", strcpy(cpy2, ""));
+	printf("ft_strcpy = %s\n", ft_strcpy(ft_cpy2, ""));
+	char cpy3[10] = "123";
+	char ft_cpy3[10] = "123";
+	printf("   strcpy = %s\n", strcpy(cpy3, "456"));
+	printf("ft_strcpy = %s\n", ft_strcpy(ft_cpy3, "456"));
 
+	printf("\n\033[36m____ft_strncpy____\033[00m\n");
+	char ncpy1[10] = {0};
+	char ft_ncpy1[10] = {0};
+	printf("   strncpy = %s\n", strncpy(ncpy1, "424242", 2));
+	printf("ft_strncpy = %s\n", ft_strncpy(ft_ncpy1, "424242", 2));
+	char ncpy2[10] = {0};
+	char ft_ncpy2[10] = {0};
+	printf("   strncpy = %s\n", strncpy(ncpy2, "424242", 0));
+	printf("ft_strncpy = %s\n", ft_strncpy(ft_ncpy2, "424242", 0));
+	char ncpy3[10] = "456";
+	char ft_ncpy3[10] = "456";
+	printf("   strncpy = %s\n", strncpy(ncpy3, "123", 10));
+	printf("ft_strncpy = %s\n", ft_strncpy(ft_ncpy3, "123", 10));
+
+	printf("\n\033[36m____ft_strchr____\033[00m\n");
+
+	printf("\n\033[36m____ft_strrchr____\033[00m\n");
 
 	printf("\n\033[33m________is* group________\033[00m\n");
 
