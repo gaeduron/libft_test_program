@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 09:16:33 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 12:17:57 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -308,7 +308,6 @@ void	part1()
 
 	printf("\n\033[33m________to* group________\033[00m\n");
 
-
 	printf("\n\033[36m____ft_tolower____\033[00m\n");
 	printf("   tolower = %d\n", tolower('c'));
 	printf("ft_tolower = %d\n", ft_tolower('c'));
@@ -338,5 +337,84 @@ void	part1()
 	printf("ft_toupper = %d\n", ft_toupper(0));
 
 	printf("\n\033[33m________mem* group________\033[00m\n");
+	
+	printf("\n\033[36m____ft_memset____\033[00m\n");
+	char set1[11] = "1234567890";
+	char ft_set1[11] = "1234567890";
+	printf("   memeset = %s\n", memset(set1, '4', 10));
+	printf("ft_memeset = %s\n", ft_memset(ft_set1, '4', 10));
+	char set2[11] = "1234567890";
+	char ft_set2[11] = "1234567890";
+	printf("   memeset = %s\n", memset(set2, '4', 3));
+	printf("ft_memeset = %s\n", ft_memset(ft_set2, '4', 3));
+	char set3[11] = "1234567890";
+	char ft_set3[11] = "1234567890";
+	printf("   memeset = %s\n", memset(set3, '4', 0));
+	printf("ft_memeset = %s\n", ft_memset(ft_set3, '4', 0));
 
+	printf("\n\033[36m____ft_bzero____\033[00m\n");
+	void *bz1 = set1;
+	void *ft_bz1 = ft_set1;
+	bzero(bz1, 10);
+	ft_bzero(ft_bz1, 10);
+	printf("   bzero = %s\n", set1);
+	printf("ft_bzero = %s\n", ft_set1);
+	void *bz2 = set2+1;
+	void *ft_bz2 = ft_set2+1;
+	bzero(bz2, strlen(set2+1));
+	ft_bzero(ft_bz2, strlen(ft_set2+1));
+	printf("   bzero = %s\n", set2);
+	printf("ft_bzero = %s\n", ft_set2);
+
+	printf("\n\033[36m____ft_memcpy____\033[00m\n");
+	char mcpy1[11] = {0};
+	char ft_mcpy1[11] = {0};
+	printf("   memcpy = %s\n", memcpy(mcpy1, "1234567890", 10));
+	printf("ft_memcpy = %s\n", ft_memcpy(ft_mcpy1, "1234567890", 10));
+	char mcpy2[11] = {0};
+	char ft_mcpy2[11] = {0};
+	printf("   memcpy = %s\n", memcpy(mcpy2, "1234567890", 1));
+	printf("ft_memcpy = %s\n", ft_memcpy(ft_mcpy2, "1234567890", 1));
+	char mcpy3[11] = {0};
+	char ft_mcpy3[11] = {0};
+	printf("   memcpy = %s\n", memcpy(mcpy3, "1234567890", 0));
+	printf("ft_memcpy = %s\n", ft_memcpy(ft_mcpy3, "1234567890", 0));
+	char mcpy4[11] = "000";
+	char ft_mcpy4[11] = "000";
+	printf("   memcpy = %s\n", memcpy(mcpy4, "1234567890", 3));
+	printf("ft_memcpy = %s\n", ft_memcpy(ft_mcpy4, "1234567890", 3));
+
+	printf("\n\033[36m____ft_memccpy____\033[00m\n");
+	char mccpy1[11] = {0};
+	char ft_mccpy1[11] = {0};
+	printf("   memccpy = %s\n", memccpy(mccpy1, "1234567890", '5', 10));
+	printf("ft_memccpy = %s\n", ft_memccpy(ft_mccpy1, "1234567890", '5', 10));
+	char mccpy2[11] = {0};
+	char ft_mccpy2[11] = {0};
+	printf("   memccpy = %s\n", memccpy(mccpy2, "1234567890", '5',1));
+	printf("ft_memccpy = %s\n", ft_memccpy(ft_mccpy2, "1234567890", '5',1));
+	char mccpy3[11] = {0};
+	char ft_mccpy3[11] = {0};
+	printf("   memccpy = %s\n", memccpy(mccpy3, "1234567890", 0, 10));
+	printf("ft_memccpy = %s\n", ft_memccpy(ft_mccpy3, "1234567890", 0, 10));
+	printf("   memccpy = %s\n", mccpy3);
+	printf("ft_memccpy = %s\n", mccpy3);
+	char mccpy4[11] = "000";
+	char ft_mccpy4[11] = "000";
+	printf("   memccpy = %s\n", memccpy(mccpy4, "1234567890", '3', 5));
+	printf("ft_memccpy = %s\n", ft_memccpy(ft_mccpy4, "1234567890", '3', 5));
+
+	printf("\n\033[36m____ft_memmove____\033[00m\n");
+
+	printf("\n\033[36m____ft_memchr____\033[00m\n");
+
+	printf("\n\033[36m____ft_memcmp____\033[00m\n");
+
+	printf("\n\033[33m________other group________\033[00m\n");
+	
+	printf("\n\033[36m____ft_atoi____\033[00m\n");
+	printf("ATOI: 0 = %d, 10 = %d, -10 = %d, int_max = %d, int_min = %d", atoi("0"), atoi("10"), atoi("-10"), atoi("2147483647"), atoi("-2147483648"));
+	printf("\nFT_ATOI: nb1 = %d, nb2 = %d, nb3 = %d, nb4 = %d, nb5 = %d", ft_atoi("0"), ft_atoi("10"), ft_atoi("-10"), ft_atoi("2147483647"), ft_atoi("-2147483648"));
+	printf("\nATOI: '   -23' = %d, '  - 10' = %d, '  10 23' = %d, '\n   21' = %d", atoi("   -23"), atoi("  - 10"), atoi("  10 23"), atoi("\n\t\v\f\r 21"));
+	printf("\nFT_ATOI: '   -23' = %d, '  - 10' = %d, '  10 23' = %d, '\n    21' = %d", ft_atoi("   -23"), ft_atoi("  - 10"), ft_atoi("  10 23"), ft_atoi("\n\t\v\f\r 21"));
 }
