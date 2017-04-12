@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/11 20:50:16 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 09:16:33 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -310,9 +310,32 @@ void	part1()
 
 
 	printf("\n\033[36m____ft_tolower____\033[00m\n");
+	printf("   tolower = %d\n", tolower('c'));
+	printf("ft_tolower = %d\n", ft_tolower('c'));
+	printf("   tolower = %d\n", tolower('1'));
+	printf("ft_tolower = %d\n", ft_tolower('1'));
+	printf("   tolower = %d\n", tolower('\10'));
+	printf("ft_tolower = %d\n", ft_tolower('\10'));
+	printf("   tolower = %d\n", tolower('C'));
+	printf("ft_tolower = %d\n", ft_tolower('C'));
+	printf("   tolower = %d\n", tolower(1203));
+	printf("ft_tolower = %d\n", ft_tolower(1203));
+	printf("   tolower = %d\n", tolower(0));
+	printf("ft_tolower = %d\n", ft_tolower(0));
 
 	printf("\n\033[36m____ft_toupper____\033[00m\n");
-
+	printf("   toupper = %d\n", toupper('c'));
+	printf("ft_toupper = %d\n", ft_toupper('c'));
+	printf("   toupper = %d\n", toupper('1'));
+	printf("ft_toupper = %d\n", ft_toupper('1'));
+	printf("   toupper = %d\n", toupper('\10'));
+	printf("ft_toupper = %d\n", ft_toupper('\10'));
+	printf("   toupper = %d\n", toupper('C'));
+	printf("ft_toupper = %d\n", ft_toupper('C'));
+	printf("   toupper = %d\n", toupper(1203));
+	printf("ft_toupper = %d\n", ft_toupper(1203));
+	printf("   toupper = %d\n", toupper(0));
+	printf("ft_toupper = %d\n", ft_toupper(0));
 
 	printf("\n\033[33m________mem* group________\033[00m\n");
 
