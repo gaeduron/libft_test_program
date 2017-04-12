@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 12:17:57 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 16:40:14 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -405,10 +405,40 @@ void	part1()
 	printf("ft_memccpy = %s\n", ft_memccpy(ft_mccpy4, "1234567890", '3', 5));
 
 	printf("\n\033[36m____ft_memmove____\033[00m\n");
+	char move1[11] = "1234567890";
+	char ft_move1[11] = "1234567890";
+	printf("   memmove = %s\n", memmove(move1, move1, 10));
+	printf("ft_memmove = %s\n", ft_memmove(ft_move1, ft_move1, 10));
+	char move2[11] = "1234567890";
+	char ft_move2[11] = "1234567890";
+	printf("   memmove = %s\n", memmove(move2, &move2[2], 6));
+	printf("ft_memmove = %s\n", ft_memmove(ft_move2, &ft_move2[2], 6));
+	char move3[11] = "1234567890";
+	char ft_move3[11] = "1234567890";
+	printf("   memmove = %s\n", memmove(&move3[2], move3, 6));
+	printf("ft_memmove = %s\n", ft_memmove(&ft_move3[2], ft_move3, 6));
 
 	printf("\n\033[36m____ft_memchr____\033[00m\n");
+	printf("   memchr = %s\n", memchr("1234567890", '5', 10));
+	printf("ft_memchr = %s\n", ft_memchr("1234567890", '5', 10));
+	printf("   memchr = %s\n", memchr("1234567890", 'A', 10));
+	printf("ft_memchr = %s\n", ft_memchr("1234567890", 'A', 10));
+	printf("   memchr = %s\n", memchr("1234567890", '5', 3));
+	printf("ft_memchr = %s\n", ft_memchr("1234567890", '5', 3));
+	printf("   memchr = %s\n", memchr("1234567890", '\033', 10000));
+	printf("ft_memchr = %s\n", ft_memchr("1234567890", '\033', 10000));
 
 	printf("\n\033[36m____ft_memcmp____\033[00m\n");
+	printf("   memcmp = %d\n", memcmp("1234567890", "1234567890", 10));
+	printf("ft_memcmp = %d\n", ft_memcmp("1234567890", "1234567890", 10));
+	printf("   memcmp = %d\n", memcmp("1234567890", "1234567790", 10));
+	printf("ft_memcmp = %d\n", ft_memcmp("1234567890", "1234567790", 10));
+	printf("   memcmp = %d\n", memcmp("1234567890", "", 10));
+	printf("ft_memcmp = %d\n", ft_memcmp("1234567890", "", 10));
+	printf("   memcmp = %d\n", memcmp("", "", 1000));
+	printf("ft_memcmp = %d\n", ft_memcmp("", "", 1000));
+	printf("   memcmp = %d\n", memcmp("1234567890", "1234567790", 0));
+	printf("ft_memcmp = %d\n", ft_memcmp("1234567890", "1234567790", 0));
 
 	printf("\n\033[33m________other group________\033[00m\n");
 	
