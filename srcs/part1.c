@@ -6,7 +6,7 @@
 /*   By: gduron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 09:49:32 by gduron            #+#    #+#             */
-/*   Updated: 2017/04/12 16:40:14 by gduron           ###   ########.fr       */
+/*   Updated: 2017/04/12 17:03:20 by gduron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,7 +153,7 @@ void	part1()
 	printf("   strncat = %s\n", strncat(ncat4, "424242", 0));
 	printf("ft_strncat = %s\n", ft_strncat(ft_ncat4, "424242", 0));
 
-	printf("\n\033[36m____ft_strncat____\033[00m\n");
+	printf("\n\033[36m____ft_strlcat____\033[00m\n");
 	char lcat1[10] = {0};
 	char ft_lcat1[10] = {0};
 	printf("   strlcat = %lu\n", strlcat(lcat1, "424242", 3));
@@ -439,6 +439,8 @@ void	part1()
 	printf("ft_memcmp = %d\n", ft_memcmp("", "", 1000));
 	printf("   memcmp = %d\n", memcmp("1234567890", "1234567790", 0));
 	printf("ft_memcmp = %d\n", ft_memcmp("1234567890", "1234567790", 0));
+	printf("   memcmp = %d\n", memcmp("1234567890", "9234567890",10));
+	printf("ft_memcmp = %d\n", ft_memcmp("1234567890", "9234567890", 10));
 
 	printf("\n\033[33m________other group________\033[00m\n");
 	
